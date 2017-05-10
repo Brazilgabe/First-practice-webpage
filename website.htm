@@ -1,0 +1,398 @@
+<!DOCTYPE.html>
+<!-- Header -->
+<html lan="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title> San Diego Blog </title>
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <!-- Background color : #90afc5
+     Center background color : #FEFBE8
+     Text & outline color : #336b87
+-->
+    <style>
+        body {
+            background: #90afc5;
+            font-family: verdana, tahoma, sans-serif;
+            font-size: 18px;
+            overflow: auto;
+        }
+
+        h1,
+        h2,
+        h3 {
+            text-align: center;
+            padding-left: 5px;
+            color: #336b87;
+        }
+
+        p {
+            padding: 2%;
+            color: #336b87;
+        }
+
+        img {
+            text-align: center;
+            max-width: 100%;
+            height: auto;
+            width: auto;
+        }
+
+        #wrapper {
+            margin: 0 auto;
+            max-width: 1020px;
+            width: 98%;
+            background-color: #fefbe8;
+            border: 1px solid #336b87;
+            border-radius: 2px;
+            box-shadow: 0 0 10px rgba(12, 3, 25, 0.8);
+        }
+
+        #callout {
+            width: 100%;
+            height: auto;
+            background: #336b87;
+            overflow: hidden;
+        }
+
+        #callout p {
+            text-align: right;
+            font-size: 13px;
+            padding: 0.1% 5% 0 0;
+            color: #fefbe8;
+        }
+
+        #callout p a {
+            color: #fefbe8;
+            text-decoration: none;
+        }
+
+        header {
+            width: 96%;
+            min-height: 125px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        header img {
+            width: 96%;
+            height: 300px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding-left: 50px;
+        }
+
+        nav ul li {
+            float: left;
+            border: 1px solid #336b87;
+            width: 15%;
+        }
+
+        nav ul li a {
+            background: #fefbe8;
+            display: block;
+            padding: 5% 12%;
+            font-weight: bold;
+            font-size: 18px;
+            color: #336b87;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav ul li a:hover,
+        nav ul li.active a {
+            background-color: #336b87;
+            color: #fefbe8;
+        }
+
+        .titles h3 {
+            text-align: left;
+            padding-left: 5px;
+            color: #336b87;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 400px;
+            border-top: 1px solid #336b87;
+            border-bottom: 1px solid #336b87;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        .left-col {
+            width: 55%;
+            float: left;
+            margin: -2% 1% 1% 1%;
+        }
+
+        .sidebar {
+            width: 40%;
+            float: right;
+            margin: 1%;
+            text-align: center;
+        }
+
+        .places {
+            float: left;
+            margin: 0 auto;
+            width: 100%;
+            height: auto;
+            padding: 1%;
+        }
+
+        .section {
+            width: 29%;
+            float: left;
+            margin: 2% 2%;
+            text-align: center;
+        }
+
+        .poi {
+            width: 29%;
+            float: left;
+            margin: 2% 2%;
+            text-align: center;
+        }
+
+        .poi img {
+            height: 300PX;
+            border: 2px solid #336b87;
+        }
+
+        footer {
+            background: #336b87;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        footer p,
+        footer h3 {
+            color: #fefbe8;
+        }
+
+        footer p a {
+            color: #fefbe8;
+            text-decoration: none;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+        }
+
+        ul li img {
+            height: 50px;
+        }
+        /*--------media------*/
+
+        @media screen and (max-width: 478px) {
+            body {
+                font-size: 13px;
+            }
+        }
+
+        @media screen and (max-width: 740px) {
+            nav {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            nav ul {
+                list-style: none;
+                margin: 0 auto;
+                padding-left: 0;
+            }
+            nav ul li {
+                text-align: center;
+                margin-left: 0 auto;
+                width: 100%;
+                border-top: 1px solid #336b87;
+                border-left: 1px solid #336b87;
+                border-right: 1px solid #336b87;
+                border-bottom: 1px solid #336b87;
+            }
+            nav ul li a {
+                padding: 8px 0px;
+                font-size: 16px;
+            }
+            .left-col {
+                width: 100%;
+            }
+            .sidebar {
+                width: 100%;
+            }
+            .section {
+                float: left;
+                width: 100%;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="callout">
+            <!-- San Diego Life Header bar -->
+            <p> <b> San Diego Adventure </b> </p>
+        </div>
+        <!-- INTRO TITLE IMAGE -->
+        <header>
+            <a href="#"><img src="https://hymnal-prod.vox-cdn.com/thumbor/lSh5YNe3cRmysJED7I98CXpELAQ=/hymnal-prod.vox-cdn.com/uploads/asset/file/14999/sandiegologo.png" alt="San Diego Life" title="San Diego Life"></a>
+        </header>
+        <!-- Links Bar -->
+        <nav>
+            <ul>
+                <li class="active"><a href="#"> Home </a></li>
+                <li> <a href="#"> Intro </a> </li>
+                <li> <a href="#"> About </a> </li>
+                <li> <a href="#"> Culture </a> </li>
+                <li> <a href="#"> Location </a> </li>
+                <li> <a href="#"> Events </a> </li>
+            </ul>
+            <div class="clearfix"></div>
+        </nav>
+        <!-- BANNER IMAGE UNDER CLICK LINKS -->
+        <div class="banner">
+            <center><img src="http://www.accta.net/assets/conference/2014/sd.jpg" /></center>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="titles">
+            <h3>Where is San Diego?</h3>
+        </div>
+
+        <!-- Introduction to San Diego Paragraphs-->
+        <section class="left-col">
+            <p style="text-indent: 50px;"> San Diego is a city on the Pacific coast of California known for its beaches, parks and warm climate. Immense Balboa Park is the site of the renowned San Diego Zoo, as well as numerous art galleries, artist studios, museums and gardens. A
+                deep harbor is home to a large active naval fleet, with the USS Midway, an aircraft-carrier-turned-museum, open to the public. </p>
+            <p style="text-indent: 50px;"> With an estimated population of nearly 1.4 million, San Diego is the eighth largest city in the United States and the second largest in California. San Diego has a very diverse culture due to its proximity to Mexico and also due to its appealing
+                climate and lifestyle. </p>
+        </section>
+        <aside class="sidebar">
+            <div class="Places">
+                <!-- Downtown City Line IMAGE-->
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/0a/8b/5f/41/downtown-san-diego-s.jpg" />
+            </div>
+        </aside>
+        <div class="clearfix"></div>
+
+        <div class="titles">
+            <h3>Why would i go there?</h3>
+        </div>
+
+        <div class="section">
+            <h3>Food</h3>
+            <!-- FOOD IMAGE-->
+            <img src="https://s-media-cache-ak0.pinimg.com/originals/fc/4c/e4/fc4ce427b0024e5a1288e76521b404e2.jpg" />
+            <p>Because of its ethnic and cultural mix, San Diego has a wide range of cuisines. One can find Mexican, Italian, French, Spanish, Filipino, Vietnamese, Greek, Latin, German, Indian, Central and East Asian, Middle Eastern and Pacific Islander
+                food throughout the city. In addition, there are numerous seafood restaurants and steakhouses. The city's long history and close proximity to Mexico has endowed the area with an extensive variety of authentic Mexican restaurants. Regional
+                homemade specialties, border fare and haute cuisine are all readily available.</p>
+        </div>
+
+        <div class="section">
+            <h3>Life</h3>
+            <!-- life IMAGE-->
+            <img src="http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2011/08/23/43047757-CNBC_top_ten_most_diverse_cities_cover.600x400.jpg?v=1305663789" />
+            <p>Tourists flock to San Diego to escape their local summer heat (we’re looking at you, Arizona), while we enjoy the temperate weather year-round. On top of that, we have a zillion theme parks, including LEGOLAND, SeaWorld, and the San Diego
+                Zoo, so there is always something to do. Thanks to the mild temperatures, people spend all year outdoors. That means everyone is glowing...Sure, not absolutely every single person living in San Diego is a knockout. But the healthy lifestyle
+                most people live means a lot of people are in great shape. There are four major colleges in the city, which means a constant influx of youthful coeds, and as a majority, San Diegans have got it going on.</p>
+        </div>
+
+        <div class="section">
+            <h3>Beer</h3>
+            <!-- BEER IMAGE-->
+            <img src="http://media.sdreader.com/img/photos/2016/12/24/sdbeer2016_t658.jpg?ff95ca2b4c25d2d6ff3bfb257febf11d604414e5" />
+            <p>San Diego County has a vibrant craft brewing community featuring more than 100 active local brewpubs and/or microbreweries. The city and county of San Diego are sometimes referred to as "America's craft beer capital". San Diego was listed
+                first in the "Top Five Beer Towns in the U.S." by Men's Journal, and the Full Pint said that San Diego is "one of the country's premier craft beer destinations" with a "thriving brewing culture". San Diego brewers have pioneered several
+                specialty beer styles. Three San Diego County breweries are consistently rated in the Top 10 breweries in the world: AleSmith Brewing Company, Pizza Port/Lost Abbey, and Stone Brewing Co.</p>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="titles">
+            <h3> Points of Interest</h3>
+        </div>
+
+        <!-- Points Of Interest-->
+        <div class="poi">
+            <!--San Diego Zoo-->
+            <H3><a href="http://zoo.sandiegozoo.org">San Diego Zoo</h3>
+            </a>
+            <img src="http://storipass.com/img/venue/sz/logo.jpg" / alt="#">
+        </div>
+        <div class="poi">
+            <!--Uss Midway Museum-->
+            <h3> <a href="http://www.midway.org">USS Midway Museum</h3></a>
+            <img src="https://richmedia.channeladvisor.com/ImageDelivery/imageService?profileId=12026540&id=913497&recipeId=728" alt="#">
+        </div>
+        <div class="poi">
+            <!--Balboa Park-->
+            <h3><a href="https://www.balboapark.org">Balboa Park</h3></a>
+            <img src="http://www.trbimg.com/img-57cff020/turbine/sdut-balboa-park-logo-motto-video-film-tourism-history-2014dec10" alt="#">
+        </div>
+        <div class="poi">
+            <!--Sea World-->
+            <h3><a href="https://seaworldparks.com/en/seaworld-sandiego/">Sea World</h3></a>
+            <img src="https://11284-presscdn-0-40-pagely.netdna-ssl.com/wp-content/uploads/2016/03/Seaworld-logo.png" alt="#">
+        </div>
+        <div class="poi">
+            <!--Gas Lamp Quarter-->
+            <h3><a href="http://www.gaslamp.org">Gas Lamp Quarter</h3></a>
+            <img src="https://pbs.twimg.com/profile_images/530076943836663808/MveHqkVN.jpeg" alt="#">
+        </div>
+        <div class="poi">
+            <!--Seaport Village-->
+            <h3><a href="http://www.seaportvillage.com">Seaport Village</h3></a>
+            <img src="https://russelrayphotos.files.wordpress.com/2012/05/seaport-village-1-500.jpg" alt="#">
+        </div>
+
+        <footer>
+
+            <div class="section">
+            </div>
+            <!--
+        <p> San Diego Life </p>
+        <p> San Diego, California </p>
+      </div>
+-->
+            <div class="section">
+                <ul>
+                    <!-- SOCIAL MEDIA LINK IMAGES-->
+                    <li>
+                        <a href="#"><img src="http://www.w3newbie.com/wp-content/uploads/facebook1.png" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="http://www.w3newbie.com/wp-content/uploads/googleplus.png" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="http://www.w3newbie.com/wp-content/uploads/twitter1.png" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="http://www.w3newbie.com/wp-content/uploads/youtube1.png" /></a>
+                    </li>
+                    <p> Come see the sun!</p>
+                </ul>
+            </div>
+            <!--
+      <div class="section" >
+         <p> Come see the sun!</p>
+      </div>
+-->
+        </footer>
+    </div>
+    <p style="text-align: center; padding:0px;">&#169;Copyright - San Diego Life, 2017. </p>
+
+
+</body>
+
+</html>
